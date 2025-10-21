@@ -1,2 +1,23 @@
 Please add your pseudocode to this file
 And a written explanation of your solution
+
+For each letter in the input string as the first element:
+    For each letter in the input string as the same or second element:
+        Take the substring that starts at i and ends at j and assign it to a variable
+        Add that variable to the array
+
+Explanation of solution:
+In the function consecutiveSubstrings(string), I have two loops, nested. The first gets the anchor element, then the second gets the next or same element.
+It has to be the next or same element to allow for single character strings ("a" from "abc").
+I then push the substrings into an array.
+
+Time complexity:
+O(n^2) (quadratic time)
+
+
+Task 4:
+1. Determine which aspect is scalable by looking into variables.
+The aspects that are scalable is the string length, and the number of substrings and their lengths
+
+2. Determine how that scalable element changes the code.
+More characters leads to more loop iterations
